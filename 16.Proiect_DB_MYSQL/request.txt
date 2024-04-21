@@ -1,0 +1,14 @@
+Создать запрос по созданию Базы Данных Mysql с названием: Taxi, 
+с таблицами: 
+
+Driver, с полями (id (int primary, unique), name varchar 50)
+Client, с полями (id (int primary, unique), name varchar 50)
+Tariff, с полями (id (int primary, unique), type varchar 20)
+Car, с полями (id (int primary, unique), model varchar 50, tariff int)
+Demand_factor, с полями (id (int primary, unique), name varchar 50)
+Work_shift, с полями (id (int primary, unique), car_id int, driver_id INT)
+Reviews, с полями (id (int primary, unique), text varchar 255, last_name order_id int)
+Review_type, с полями (id (int primary, unique), type varchar 20)
+Review2Review_type с полями (review_id int, review_type_id int)
+Orders где поля: id (int primary, unique), driver_id int, client_id int, tariff_id int, review_id int, demand_fact_id int 
+а потом добавить запрос по созданию связей FOREGN KEY
